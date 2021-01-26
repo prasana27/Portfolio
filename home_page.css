@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -7,30 +10,40 @@
 }
 
 body{
-    padding: 10px 20%;
-    font-family: "Josefin Slab", serif;
+    font-family: 'Merriweather', serif;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    padding-top: 35px;
+    word-spacing: 1px;
+    line-height: 30px;
 }
 
 
 .logo{
     width: 40px;
     cursor: pointer;
-    margin-left: auto;
+
 }
 
 li, a{
-    font-size: 18px;
+    font-size: 14px;
     color: black;
     text-decoration: black;
 }
 
-header{
+.top{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 20%;
 }
 
-.nav_links{
+
+.nav_links, .logo{
     list-style: none;
 }
 
@@ -52,44 +65,49 @@ header{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 40px;
+    padding: 10px 20%;
 }
 
 .intro{
-    width: 400px;
+    width: 40%;
     margin-right: 40px;
 }
 
 .projects{
-    width: 500px;
+    width: 60%;
+    
+}
+
+.projects a{
+    font-size: 10px !important;
 }
 
 .p1, .p2, .p3, .p4{
     background-color: #80DDFF;
-    margin: 0px 10px 7px 20px;
+    margin: 0px 10px 0px 20px;
     height: 100px;
     padding: 3px 5px;
-    border-radius: 5px;
+    border-radius: 0px;
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
-
 }
+
 
 .p2{
     background-color: #95E3FF;
+
 }
 
 .p3{
     background-color: #A8E8FF;
+
 }
 
 .p4{
     background-color: #B7ECFF;
+
 }
 
-.projects h3{
-    font-weight: 600;
-}
 
 .projects p{
     align-self: flex-end;
@@ -121,7 +139,50 @@ header{
 }
 
 
+/* Responsive mode */
 
+@media (max-width: 971px) {
+    .top {
+        padding: 10px 5%;
+    }
+
+    .main_content {
+        padding: 10px 5%;
+    }
+
+}
+
+@media (max-width: 720px){
+
+
+
+    .main_content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro{
+        width: 100%;
+    }
+
+    .projects{
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .top{
+        flex-direction: column-reverse;
+    }
+
+    .nav_links li{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .intro p{
+        margin-top: 0px;
+    }
+}
 
 
 
