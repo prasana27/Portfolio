@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    padding: 10px 20%;
+    font-family: "Josefin Slab", serif;
+}
+
+
+.logo{
+    width: 40px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+li, a{
+    font-size: 18px;
+    color: black;
+    text-decoration: black;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 60px 0px 0px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: teal;
+}
+
+.main_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.intro{
+    width: 400px;
+    margin-right: 40px;
+}
+
+.projects{
+    width: 500px;
+}
+
+.p1, .p2, .p3, .p4{
+    background-color: #80DDFF;
+    margin: 0px 10px 7px 20px;
+    height: 100px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+
+}
+
+.p2{
+    background-color: #95E3FF;
+}
+
+.p3{
+    background-color: #A8E8FF;
+}
+
+.p4{
+    background-color: #B7ECFF;
+}
+
+.projects h3{
+    font-weight: 600;
+}
+
+.projects p{
+    align-self: flex-end;
+}
+
+.projects div{
+    transition: all 0.3s ease 0s;  
+}
+
+.projects div:hover{
+    background-color: rgb(236, 171, 236); 
+}
+
+
+.intro h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.intro h1{s
+    margin-top: 5px;
+}
+
+.intro p{
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
