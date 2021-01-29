@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <title>Project 3</title>
+</head>
+<body>
+
+    <div class="loader-wrapper">
+        <img class="loader" src="/img/svg-loaders/ball-triangle.svg" alt="loader">
+    </div>
+    
+
+    <header>
+
+        <div class="top">
+        
+        <ul class="nav_links">
+            <li><a href="/index.html">UX Portfolio</a></li>
+            <li><a href="#">Illustrations</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <img class="logo" src="/img/flower-svgrepo-com.svg" alt="Logo">
+
+        </div>
+
+    </header>
+
+    <div class="cover">
+        <h1>Go Electric</h1>
+        <p>Information architecture for a company based around electric cars.</p>
+        <!-- <img class="car" src="/img/go_electric/Asset 1.svg" alt=""> -->
+    </div> 
+
+    <div>
+        <h2></h2>
+    </div>
+
+    <div class="content">
+
+    <div class="section1">
+
+        <h2>Overview</h2>
+
+        <p>This website is about providing information and advive about electric cars. The information arcchitecture for the site is constructed
+            from domain experts and users with intrest around the topic.
+        </p>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>Domain Model</li>
+            <li>Sitemap</li>
+            <li>User Journeys</li>
+            <li>Wireframing</li>
+        </ul>
+
+    </div>
+
+    <div class="section2">
+
+        <div class="s2content">
+
+            <h2>Domian model</h2>
+
+            <p>I conducted 2 interviews with domain experts where one drives an hybrid electric car and the other is a mechanial engineer.
+
+                The interviews provided a few key insights including:
+                the types of decisions car buyers make when purchasing a car;
+                their experiences of driving an electric and comparing it to a petrol/diesel car;
+                the way an electric car works.
+                
+                Using this information, I grouped the entities together and formed clusters. Then provided a colour coding sysytem to differentiate provinance of entities.
+            </p>
+
+            <img src="/img/go_electric/domain model.jpg" alt="Domain model">
+
+        </div>
+    
+    </div>
+
+    <div class="section3">
+
+        <h2>Site map</h2>
+
+        <p>
+            Using the information found in the domain model, a sitemap was constructed to show the navigation of the site.
+        </p> 
+        <p>   To ensure the navigation was done correctly, I used techniques such as card sorting and tree testing on the Optimal Workshop.
+            I initially found that using open card sort, the user testers categorised the entities in unexpected groups and did not fit with the purpose of the site. For example, air pollution was under the category 'Government'. I then used a tree test, to check if users can navigate to an specific page from a task. This was found to be very successful such as air pollution was navigated from global navigation with a 100% success rate without detour..
+        </p> 
+
+        <p>
+            The sitemap had a flat website heirarchy, ths ensures that they will find the info more easily without going onto misleading paths. However, this means there will more global navigation pages.
+        </p>
+
+        <img src="/img/go_electric/sitemap.jpg" alt="Site map">
+        
+    </div>
+
+    <div class="section4">
+
+        <div class="s4content">
+
+            <h2>User Journey</h2>
+
+            <p>A goal was set that a user would have several ways of navigating to the final destination. I explored both how using the global navigation and search would find the the required information.
+                On some user actions, user thoughts are provided to show what users may be thinking of as they navigate through the site. </p>
+
+            <img src="/img/go_electric/user journey.jpg" alt="User Journey">
+
+        </div>
+
+    </div>
+ 
+
+    </div>
+
+    <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow","swing");
+        });
+    </script>
+
+
+    <script>
+        ScrollOut({
+
+            targets: ".section1",
+            offset: 400
+
+        });
+
+    </script>
+
+
+
+</body>
+</html>
