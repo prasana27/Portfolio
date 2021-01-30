@@ -78,6 +78,28 @@ header{
     color: teal;
 }
 
+a.left
+{
+    position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: teal;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 .cover{
     background-color: #f8f79b;
     height: 650px;
@@ -151,10 +173,6 @@ header{
     opacity: 0;
   }
 
-.section1 img{
-    width: 100%;
-    padding-top: 50px;
-}
 
 .section2{
     background-color: #f8f79b;
@@ -165,7 +183,7 @@ header{
 }
 
 .s2content img{
-    width: 90%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -182,7 +200,7 @@ header{
 }
 
 .section3 img{
-    width: 90%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -199,10 +217,15 @@ header{
 }
 
 .s4content img{
-    width: 90%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 3px;
     padding-top: 30px;
 }
+
+
 
 /* Responsive mode */
 
