@@ -225,6 +225,35 @@ a.left:hover:before {
     padding-top: 30px;
 }
 
+footer{
+    padding: 100px 20%;
+}
+
+footer h2{
+    padding-bottom: 50px;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project1{
+    background-color: rgb(211, 254, 255);
+    text-align: center;
+    padding: 50px 75px;
+    border-radius: 5px;
+}
+
+.project3{
+    background-color: rgb(211, 254, 255);
+    text-align: center;
+    padding: 50px 75px;
+    border-radius: 5px;
+}
+
+
+
 
 
 /* Responsive mode */
