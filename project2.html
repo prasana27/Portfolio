@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <title>Project 2</title>
 </head>
+
 <body>
+
+    <div class="loader-wrapper">
+        <img class="loader" src="/img/svg-loaders/ball-triangle.svg" alt="loader">
+    </div>
 
     <header>
 
         <div class="top">
-        
-        <ul class="nav_links">
-            <li><a href="/index.html">UX Portfolio</a></li>
-            <li><a href="#">Illustrations</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <img class="logo" src="/img/flower-svgrepo-com.svg" alt="Logo">
+
+            <ul class="nav_links">
+                <li><a class="left" href="/index.html">UX Portfolio</a></li>
+                <li><a class="left" href="#">Illustrations</a></li>
+                <li><a class="left" href="/about.html">About me</a></li>
+                <li><a class="left" href="#">Contact</a></li>
+            </ul>
+            <img class="logo" src="/img/Logo.svg" alt="Logo">
 
         </div>
 
     </header>
 
+
     <div class="cover">
         <h1>Green Space</h1>
         <p>Investigation if green space impacts wellbeing in Greater London</p>
-    </div> 
+    </div>
 
     <div>
         <h2></h2>
@@ -36,82 +44,99 @@
 
     <div class="content">
 
-    <div class="section1">
+        <div class="section1">
 
-        <h2>Final Design</h2>
-        
-        <p>This is the main data visualisation produced, the method of how this design was produced will be detailled in the below sections.</p>
+            <h2>Final Design</h2>
 
-        <img src="/img/green_space/Finaldesign.png" alt="Final design">
+            <p>This is the main data visualisation produced, the method of how this design was produced will be
+                detailled in the below sections.</p>
 
-    </div>
-
-    <div class="section2">
-
-        <div class="s2content">
-
-        <h2>Challenge</h2>
-
-        <p>Manipulate a dataset to produce effective data visualisations to answer research questions that can't be just done through simple spreasheet software.
-            The design choices should be backed up by literature and should include the 'human in the loop'. 
-        </p>
-
-        <h3>Research questions</h3>
-        <ul>
-            <li>Is there a relationship of the location of green space and the wellbeing of residents in London?</li>
-            <li>Does earnings of the residents have an impact on the above question?</li>
-        </ul>
+            <img src="/img/green_space/Finaldesign.png" alt="Final design">
 
         </div>
-    
-    </div>
+
+        <div class="section2">
+
+            <div class="s2content">
+
+                <h2>Challenge</h2>
+
+                <p>Manipulate a dataset to produce effective data visualisations to answer research questions that can't
+                    be just done through simple spreasheet software.
+                    The design choices should be backed up by literature and should include the 'human in the loop'.
+                </p>
+
+                <h3>Research questions</h3>
+                <ul>
+                    <li>Is there a relationship of the location of green space and the wellbeing of residents in London?
+                    </li>
+                    <li>Does earnings of the residents have an impact on the above question?</li>
+                </ul>
+
+            </div>
+
+        </div>
 
 
-    <div class="section3">
-        
-        <h2>Design choices</h2>
+        <div class="section3">
 
-        <ul>
-            <li>London was split by its 32 boroughs. Initially, it was planned to be split by its 626 wards, which generated too many data points,
-                hence the visualisation became unreadable.</li>
-            <li>The geographic layout for London was relaxed, a grid format was chosen. The positions of the boroughs are relatively in the same position in terms of locatiion and neighbouring boroughs.
-                This does remove accuracy for the visualisation, however it opens new possibilities and space to create better and more meaningful insights. </li>
-            <li>Differenet parameters were tested against the percentage green space for example "happiness", "pollution related deaths", "household income", "anxiety and depression ", etc...
-                Some of the parameters showed their was a trend geographictally </li>
-            <li>The parameters that showed a trend were overlapped over each other, to help see more complex insights in how green space can affect the wellbeing of residents living in London</li>
-            <li>The colour lightness of each parameter was used as the scale for how prevalent that parameter was in that borough.  </li>
-            <li>Each colour for the parameters was chosen carefully so that they were associatable. Green space % was green colour, anxiety and depression % was blue and deaths related to pollution was grey colour. </li>
-            <li>Tooltips were added, where the user can hover above the tiles in the map, where they will be displayed the borough name and the exact value for each parameter. This helps the users who want to explore the data further and does not intrude wiith the aesthetics of the design</li>
-        </ul>
-
-    </div> 
-
-    <div class="section4">
-
-        <div class="s4content">
-            
-            <h2>Insights</h2>
+            <h2>Design choices</h2>
 
             <ul>
-
-                <li>The green space gradually increases as you move further from the centre of London. This is expected as these areas are more built
-                    up for buildings and roads. More space is available for green space in the outer boroughs.
+                <li>London was split by its 32 boroughs. Initially, it was planned to be split by its 626 wards, which
+                    generated too many data points,
+                    hence the visualisation became unreadable.</li>
+                <li>The geographic layout for London was relaxed, a grid format was chosen. The positions of the
+                    boroughs are relatively in the same position in terms of locatiion and neighbouring boroughs.
+                    This does remove accuracy for the visualisation, however it opens new possibilities and space to
+                    create better and more meaningful insights. </li>
+                <li>Differenet parameters were tested against the percentage green space for example "happiness",
+                    "pollution related deaths", "household income", "anxiety and depression ", etc...
+                    Some of the parameters showed their was a trend geographictally </li>
+                <li>The parameters that showed a trend were overlapped over each other, to help see more complex
+                    insights in how green space can affect the wellbeing of residents living in London</li>
+                <li>The colour lightness of each parameter was used as the scale for how prevalent that parameter was in
+                    that borough. </li>
+                <li>Each colour for the parameters was chosen carefully so that they were associatable. Green space %
+                    was green colour, anxiety and depression % was blue and deaths related to pollution was grey colour.
                 </li>
-                <li>Anxiety and depression decreases as you move futher from the centre of London. This shows their may be an association with the amount of 
-                    green space and anxiety and depression. 
-                </li>
-                <li>
-                    Deaths related to air pollution decreases as you move further from the centre of London. Hence, the more green space may be an indicator of less likelihood
-                    of death related to pollution. The outer boroughs will have less land used up for roads which contribute to the pollution in the air.
-                </li>
-
+                <li>Tooltips were added, where the user can hover above the tiles in the map, where they will be
+                    displayed the borough name and the exact value for each parameter. This helps the users who want to
+                    explore the data further and does not intrude wiith the aesthetics of the design</li>
             </ul>
 
         </div>
 
+        <div class="section4">
 
-    </div>
- 
+            <div class="s4content">
+
+                <h2>Insights</h2>
+
+                <ul>
+
+                    <li>The green space gradually increases as you move further from the centre of London. This is
+                        expected as these areas are more built
+                        up for buildings and roads. More space is available for green space in the outer boroughs.
+                    </li>
+                    <li>Anxiety and depression decreases as you move futher from the centre of London. This shows their
+                        may be an association with the amount of
+                        green space and anxiety and depression.
+                    </li>
+                    <li>
+                        Deaths related to air pollution decreases as you move further from the centre of London. Hence,
+                        the more green space may be an indicator of less likelihood
+                        of death related to pollution. The outer boroughs will have less land used up for roads which
+                        contribute to the pollution in the air.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
 
     </div>
 
@@ -125,5 +150,12 @@
 
     </script>
 
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow", "swing");
+        });
+    </script>
+
 </body>
+
 </html>
