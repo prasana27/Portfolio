@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: black;
+}
+
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.loader{
+    width: 30px;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    padding-top: 35px;
+    word-spacing: 1px;
+    line-height: 30px;
+}
+
+
+.logo{
+    width: 45px;
+    cursor: pointer;
+
+}
+
+li, a{
+    font-size: 14px;
+    color: white;
+    text-decoration: white;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20%;
+}
+
+.nav_links, .logo{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 60px 0px 0px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    font-size: 16px;
+    color: white;
+}
+
+a.left
+{
+    position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.container img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    padding-right: 10px; 
+    padding-top: 4px;
+}
+
+.container .img1{
+    width: 600px;
+}
+
+
+
+
