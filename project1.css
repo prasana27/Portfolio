@@ -156,14 +156,14 @@ a.left:hover:before {
     margin-bottom: 100px;
 }
 
-.section1[data-scroll] {
+[data-scroll] {
     transition: opacity 1s ease 0s;
   }
 
-.section1[data-scroll="in"] {
+[data-scroll="in"] {
     opacity: 1;
   }
-.section1[data-scroll="out"] {
+[data-scroll="out"] {
     opacity: 0;
   }
 
@@ -310,6 +310,15 @@ table td.removecell {
     flex-wrap: wrap;
     padding-top: 15px; 
 }
+
+.section6{
+    background-color: #c3eeff;
+}
+
+.s6content{
+    padding: 100px 20%;
+}
+
 
 /* Responsive mode */
 

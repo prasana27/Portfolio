@@ -24,7 +24,9 @@
                 <li><a class="left" href="/index.html">UX Portfolio</a></li>
                 <li><a class="left" href="/illustrations.html">Illustrations</a></li>
                 <li><a class="left" href="/about.html">About me</a></li>
-                <li><a class="left" href="mailto:prasana.kalanathan@outlook.com?subject=Mail from Prasana portfolio">Contact</a></li>
+                <li><a class="left"
+                        href="mailto:prasana.kalanathan@outlook.com?subject=Mail from Prasana portfolio">Contact</a>
+                </li>
             </ul>
             <img class="logo" src="/img/Logo.svg" alt="Logo">
 
@@ -43,7 +45,7 @@
 
     <div class="content">
 
-        <div class="section1">
+        <div data-scroll class="section1">
 
             <h2>Challenge</h2>
 
@@ -65,7 +67,7 @@
 
         <div class="section2">
 
-            <div class="s2content">
+            <div data-scroll class="s2content">
 
                 <h2>User research</h2>
 
@@ -185,7 +187,7 @@
 
         </div>
 
-        <div class="section4">
+        <div class="section4 scroll">
             <div class="s4content">
 
                 <h2>Ideation</h2>
@@ -243,54 +245,78 @@
             </div>
         </div>
 
-    </div>
-
-    <div class="section5">
+        <div class="section5">
 
 
-        <h2>Final designs</h2>
+            <h2>Final designs</h2>
 
-        <p>The final design consisted of having question input stations dotted around the exhbits in the museum. This
-            allows users to create questions based on the the knowledge they have
-            just aquired or from past
-            experiences.</p>
+            <p>The final design consisted of having question input stations dotted around the exhbits in the museum.
+                This
+                allows users to create questions based on the the knowledge they have
+                just aquired or from past
+                experiences.</p>
 
-        <img src="/img/design_quiz/Artboard 1 copy 6@4x-100.jpg" alt="Final design 1">
+            <img src="/img/design_quiz/Artboard 1 copy 6@4x-100.jpg" alt="Final design 1">
 
-        <p>The quiz game will be based on the stairs of the Design Museum. Visitors will construct their quiz
-            controllers using 3D objects on their retractable tables.
-            The objects will be found underneath them in a bunker.</p>
+            <p>The quiz game will be based on the stairs of the Design Museum. Visitors will construct their quiz
+                controllers using 3D objects on their retractable tables.
+                The objects will be found underneath them in a bunker.</p>
 
-        <p>Questions are answered by touching the objects corresponding to the letter of the answer. The technology is
-            based on 'Makey Makey'. As
-            visitors answer questions
-            consecutively, the combo meter increases. If wrong, the combo meter is reset.</p>
+            <p>Questions are answered by touching the objects corresponding to the letter of the answer. The technology
+                is
+                based on 'Makey Makey'. As
+                visitors answer questions
+                consecutively, the combo meter increases. If wrong, the combo meter is reset.</p>
 
-        <div class="finaldesigns">
+            <div class="finaldesigns">
 
-            <img src="/img/design_quiz/Artboard 1@4x-100.jpg" alt="Final design 2">
-            <img src="/img/design_quiz/Artboard 1 copy 5@4x-100.jpg" alt="Final design 3">
-            <img src="/img/design_quiz/Artboard 1 copy 3@4x-100.jpg" alt="Final design 4">
-            <img src="/img/design_quiz/Artboard 1 copy 4@4x-100.jpg" alt="Final design 4">
+                <img src="/img/design_quiz/Artboard 1@4x-100.jpg" alt="Final design 2">
+                <img src="/img/design_quiz/Artboard 1 copy 5@4x-100.jpg" alt="Final design 3">
+                <img src="/img/design_quiz/Artboard 1 copy 3@4x-100.jpg" alt="Final design 4">
+                <img src="/img/design_quiz/Artboard 1 copy 4@4x-100.jpg" alt="Final design 4">
+
+            </div>
+
 
         </div>
 
+        <div class="section6">
+
+            <div class="s6content">
+
+                <h2>Evaluation</h2>
+
+                <p>Conducted an expert evaluation to identify usability problems in inputting questions and playing the
+                    quiz
+                    game. We decided to create a paper protoype for building the controller and using an interactive
+                    tablet
+                    display using a tablet.
+
+                    A number of issues were found such as providing clearer instructions for building controller, the
+                    sound
+                    feedback bar should change, the correct answer should be shown even if group selects wrong answer
+                    ...
+                    etc.
+
+                    Most of the major issues found were solved swiftly after the evalauation and other minor and
+                    time-consuming issues were left for a future date.</p>
+            </div>
+
+        </div>
 
     </div>
 
-    <script>
-        ScrollOut({
-
-            targets: ".section1",
-            offset: 400
-
-        });
-
-    </script>
 
     <script>
         $(window).on("load", function () {
             $(".loader-wrapper").fadeOut("slow", "swing");
+        });
+    </script>
+
+    <script>
+        ScrollOut({
+            threshold: .2,
+            once: true
         });
     </script>
 
