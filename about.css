@@ -116,6 +116,7 @@ a.left:hover:before {
     width: 40%;
     margin-left: 100px;
     border-radius: 3px;
+    object-fit: cover;
 }
 
 
@@ -125,7 +126,7 @@ a.left:hover:before {
 
 /* Responsive mode */
 
-@media (max-width: 971px) {
+@media (max-width: 1024px) {
     .top {
         padding: 10px 5%;
     }
@@ -138,20 +139,9 @@ a.left:hover:before {
 
 @media (max-width: 720px){
 
-
-
     .main_content{
         flex-direction: column;
         text-align: center;
-    }
-
-    .intro{
-        width: 100%;
-    }
-
-    .projects{
-        padding-top: 30px;
-        width: 100%;
     }
 
     .top{

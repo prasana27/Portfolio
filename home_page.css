@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 
 * {
@@ -97,6 +97,10 @@ a.left:hover:before {
   width: 100%;
 }
 
+b{
+    font-weight: 600;
+}
+
 .main_content{
     display: flex;
     flex-direction: row;
@@ -159,14 +163,15 @@ a.left:hover:before {
 }
 
 .projects div:hover{
-    background-color: rgb(236, 171, 236); 
-    box-shadow: 0px 0px 7px 0px rgb(236, 171, 236);
+    background-color: rgb(5, 98, 126); 
+    box-shadow: 0px 0px 7px 0px rgb(5, 98, 126);
     transform: scale(1.02);
     font-size: larger; 
+    color: white;
 }
 
 .intro h2{
-    font-weight: 400;
+    font-weight: 200;
     font-size: 30px;
 }
 
@@ -184,7 +189,7 @@ a.left:hover:before {
 
 /* Responsive mode */
 
-@media (max-width: 971px) {
+@media (max-width: 1024px) {
     .top {
         padding: 10px 5%;
     }
@@ -219,7 +224,8 @@ a.left:hover:before {
 
     .nav_links li{
         text-align: center;
-        padding: 10px;
+        padding-right: 5px;
+
     }
 
     .intro p{

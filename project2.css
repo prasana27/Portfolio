@@ -198,3 +198,53 @@ a.left:hover:before {
     margin-bottom: 100px;
 }
 
+/* Responsive mode */
+
+@media (max-width: 1024px) {
+    .top {
+        padding: 10px 5%;
+    }
+
+    .section1{
+        padding: 100px 10%;
+    }
+
+    .s2content{
+        padding: 100px 10%;
+    }
+
+    .section3{
+        padding: 100px 10%;
+    }
+
+    .s4content{
+        padding: 100px 10%;
+    }
+
+}
+
+@media (max-width: 720px){
+
+
+
+    .cover{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top{
+        flex-direction: column-reverse;
+    }
+
+    .nav_links{
+        padding-top: 15px;
+    }
+
+    .nav_links li{
+        text-align: center;
+        padding-right: 5px;
+
+    }
+
+}
+

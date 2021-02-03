@@ -106,14 +106,53 @@ a.left:hover:before {
 
 .container img{
     height: 400px;
-    width: 400px;
+    width: 450px;
     object-fit: cover;
-    padding-right: 10px; 
+    padding-right: 5px;
+    padding-left: 5px; 
     padding-top: 4px;
 }
 
-.container .img1{
-    width: 600px;
+
+/* Responsive mode */
+
+@media (max-width: 1024px) {
+    .top {
+        padding: 10px 5%;
+    }
+
+    .container img{
+        width: 700px;
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 720px){
+
+    .cover{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top{
+        flex-direction: column-reverse;
+    }
+
+    .nav_links{
+        padding-top: 15px;
+    }
+
+    .nav_links li{
+        text-align: center;
+        padding-right: 5px;
+
+    }
+
+    .container img{
+        width: fit-content;
+    }
+
 }
 
 

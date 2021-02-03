@@ -258,7 +258,7 @@ footer h2{
 
 /* Responsive mode */
 
-@media (max-width: 971px) {
+@media (max-width: 1024px) {
     .top {
         padding: 10px 5%;
     }
@@ -294,9 +294,14 @@ footer h2{
         flex-direction: column-reverse;
     }
 
+    .nav_links{
+        padding-top: 15px;
+    }
+
     .nav_links li{
         text-align: center;
-        padding: 10px;
+        padding-right: 5px;
+
     }
 
 }

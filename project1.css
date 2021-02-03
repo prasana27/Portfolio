@@ -311,3 +311,73 @@ table td.removecell {
     padding-top: 15px; 
 }
 
+/* Responsive mode */
+
+@media (max-width: 1024px) {
+    .top {
+        padding: 10px 5%;
+    }
+
+    .section1{
+        padding: 100px 10%;
+    }
+
+    .s2content{
+        padding: 100px 10%;
+    }
+
+    .section3{
+        padding: 100px 10%;
+    }
+
+    .s4content{
+        padding: 100px 10%;
+    }
+
+    .section5{
+        padding: 100px 10%;
+    }
+
+}
+
+@media (max-width: 720px){
+
+
+
+    .cover{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top{
+        flex-direction: column-reverse;
+    }
+
+    .nav_links li{
+        text-align: center;
+        padding-right: 5px;
+
+    }
+
+    .idea1{
+        flex-direction: column;
+    }
+
+    .idea1 img{
+        margin: 1 0px;
+    }
+
+    img:not(.logo){
+        width: 100% !important;
+    }
+
+    table{
+        font-size: 8px;
+    }
+
+    th, td{
+        padding: 3px;
+    }
+
+}
+
