@@ -24,7 +24,7 @@
             <ul class="nav_links">
                 <li><a class="left" href="/index.html">UX Portfolio</a></li>
                 <li><a class="left" href="/illustrations.html">Illustrations</a></li>
-                <li><a class="left" href="/about.htmls">About me</a></li>
+                <li><a class="left" href="/about.html">About me</a></li>
                 <li><a class="left"
                         href="mailto:prasana.kalanathan@outlook.com?subject=Mail from Prasana portfolio">Contact</a>
                 </li>
@@ -46,7 +46,7 @@
 
     <div class="content">
 
-        <div class="section1">
+        <div data-scroll class="section1">
 
             <h2>Overview</h2>
 
@@ -69,7 +69,7 @@
 
         <div class="section2">
 
-            <div class="s2content">
+            <div data-scroll class="s2content">
 
                 <h2>Domian model</h2>
 
@@ -91,7 +91,7 @@
 
         </div>
 
-        <div class="section3">
+        <div data-scroll class="section3">
 
             <h2>Site map</h2>
 
@@ -119,7 +119,7 @@
 
         <div class="section4">
 
-            <div class="s4content">
+            <div data-scroll class="s4content">
 
                 <h2>User Journey</h2>
 
@@ -134,11 +134,31 @@
 
         </div>
 
-        <div class="section5">
+        <div data-scroll class="section5">
 
             <h2>Wireframes</h2>
 
-            <p></p>
+            <p>
+                This event page presents faceted navigation where the user has to use the filters to find the
+                appropriate
+                event.
+
+                As the user uses the filters, the page will be constantly dynamically change providing feedback on what
+                the events will be. Also, certain filters will be greyed out as the clicks their filter choices to
+                ensure that you never end up with 0 results.
+            </p>
+
+            <img src="/img/go_electric/wireframe1.png" alt="Events wireframe page">
+
+            <p>The content page presents a detailled car review page. The most important information is overloaded at
+                the top so that users can know if they are interested or not quickly.
+
+                A 'Jump to Section' menu is provided so that users are given an indication of the heirarchy of the page
+                and instantly navigate to relevant part of page.
+                Similar cars are presented at the bottom to keep the user keep exploring the site.
+            </p>
+
+            <img src="/img/go_electric/wireframe2.png" alt="Content wireframe page">
 
         </div>
 
@@ -176,12 +196,9 @@
 
     <script>
         ScrollOut({
-
-            targets: ".section1",
-            offset: 400
-
+            threshold: .2,
+            once: true
         });
-
     </script>
 
 

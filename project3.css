@@ -162,14 +162,14 @@ a.left:hover:before {
     margin-bottom: 100px;
 }
 
-.section1[data-scroll] {
+[data-scroll] {
     transition: opacity 1s ease 0s;
   }
 
-.section1[data-scroll="in"] {
+[data-scroll="in"] {
     opacity: 1;
   }
-.section1[data-scroll="out"] {
+[data-scroll="out"] {
     opacity: 0;
   }
 
@@ -224,6 +224,21 @@ a.left:hover:before {
     border-radius: 3px;
     padding-top: 30px;
 }
+
+.section5{
+    padding: 0px 20%;
+    margin-bottom: 100px;
+}
+.section5 img{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+
+
 
 footer{
     padding: 100px 20%;

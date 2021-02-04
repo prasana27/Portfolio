@@ -44,7 +44,7 @@
 
     <div class="content">
 
-        <div class="section1">
+        <div data-scroll class="section1">
 
             <h2>Final Design</h2>
 
@@ -55,9 +55,9 @@
 
         </div>
 
-        <div class="section2">
+        <div  class="section2">
 
-            <div class="s2content">
+            <div data-scroll class="s2content">
 
                 <h2>Challenge</h2>
 
@@ -78,7 +78,7 @@
         </div>
 
 
-        <div class="section3">
+        <div data-scroll class="section3">
 
             <h2>Design choices</h2>
 
@@ -107,9 +107,9 @@
 
         </div>
 
-        <div class="section4">
+        <div  class="section4">
 
-            <div class="s4content">
+            <div data-scroll class="s4content">
 
                 <h2>Insights</h2>
 
@@ -142,12 +142,9 @@
 
     <script>
         ScrollOut({
-
-            targets: ".section1",
-            offset: 400
-
+            threshold: .2,
+            once: true
         });
-
     </script>
 
     <script>
