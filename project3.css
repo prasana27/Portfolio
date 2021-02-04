@@ -283,8 +283,6 @@ footer h2{
 
 @media (max-width: 720px){
 
-
-
     .cover{
         flex-direction: column;
         text-align: center;
@@ -300,8 +298,11 @@ footer h2{
 
     .nav_links li{
         text-align: center;
-        padding-right: 5px;
+        padding: 0px 7px;
+    }
 
+    .nav_links a{
+        font-size: 13px;
     }
 
 }

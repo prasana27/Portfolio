@@ -362,10 +362,17 @@ table td.removecell {
         flex-direction: column-reverse;
     }
 
+    .nav_links{
+        padding-top: 15px;
+    }
+
     .nav_links li{
         text-align: center;
-        padding-right: 5px;
+        padding: 0px 7px;
+    }
 
+    .nav_links a{
+        font-size: 13px;
     }
 
     .idea1{
@@ -376,7 +383,7 @@ table td.removecell {
         margin: 1 0px;
     }
 
-    img:not(.logo){
+    img:not(.logo,.loader){
         width: 100% !important;
     }
 
