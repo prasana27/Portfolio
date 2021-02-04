@@ -72,7 +72,7 @@ li, a{
 
 .nav_links li a:hover{
     font-size: 16px;
-    color:black);
+    color:black;
 }
 
 a.left
@@ -175,7 +175,7 @@ b{
     font-size: 30px;
 }
 
-.intro h1{s
+.intro h1{
     margin-top: 5px;
 }
 
@@ -218,8 +218,16 @@ b{
         width: 100%;
     }
 
+    .projects div{
+        margin: 0px;
+    }
+
     .top{
         flex-direction: column-reverse;
+    }
+
+    .nav_links{
+        padding-top: 15px;
     }
 
     .nav_links li{
