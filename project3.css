@@ -57,7 +57,7 @@ li, a{
 }
 
 header{
-    background-color: #f8f79b;
+    background-color: #f7e869;
 }
 
 .nav_links, .logo{
@@ -101,7 +101,7 @@ a.left:hover:before {
 }
 
 .cover{
-    background-color: #f8f79b;
+    background-color: #f7e869;
     height: 650px;
     display: flex;
     justify-content: center;
@@ -175,7 +175,7 @@ a.left:hover:before {
 
 
 .section2{
-    background-color: #f8f79b;
+    background-color: #f7e869;
 }
 
 .s2content{
@@ -208,7 +208,7 @@ a.left:hover:before {
 }
 
 .section4{
-    background-color: #ebeaa0;
+    background-color: #f7e869;
 }
 
 .s4content{
@@ -291,6 +291,10 @@ footer h2{
     }
 
     .s4content{
+        padding: 100px 10%;
+    }
+
+    .section5{
         padding: 100px 10%;
     }
 

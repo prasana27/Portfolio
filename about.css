@@ -80,7 +80,7 @@ li, a{
 
 .nav_links li a:hover{
     font-size: 16px;
-    color:black);
+    color:black;
 }
 
 a.left
@@ -163,6 +163,24 @@ a.left:hover:before {
     .intro p{
         margin-top: 0px;
     }
+
+    .main_content{
+        margin-top: 40px;
+        padding: 10px 5%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main_content img{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        border-radius: 3px;
+        object-fit: cover;
+    }
+
 }
 
 
