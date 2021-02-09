@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project4.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <title>Project 4</title>
+</head>
+
+<body>
+
+    <div class="loader-wrapper">
+        <img class="loader" src="/img/svg-loaders/ball-triangle.svg" alt="loader">
+    </div>
+
+    <header>
+
+        <div class="top">
+
+            <ul class="nav_links">
+                <li><a class="left" href="/index.html">UX Portfolio</a></li>
+                <li><a class="left" href="/illustrations.html">Illustrations</a></li>
+                <li><a class="left" href="/about.html">About me</a></li>
+                <li><a class="left"
+                        href="mailto:prasana.kalanathan@outlook.com?subject=Mail from Prasana portfolio">Contact</a>
+                </li>
+            </ul>
+            <img class="logo" src="/img/Logo.svg" alt="Logo">
+
+        </div>
+
+    </header>
+
+
+    <div class="cover">
+        <h1>Energy Visualisation</h1>
+        <p>Visualisation energy usage feedback in a household and changing people's uasage behaviour</p>
+    </div>
+
+    <div>
+        <h2></h2>
+    </div>
+
+    <div class="content">
+
+        <div data-scroll class="section1">
+
+            <h2>Overview</h2>
+
+            <p>An investigation if providing energy visualisations can help people reduce household energy usage.
+                Three types of visualisation designs
+                were identified for energy usage which was Dashboard, Ambience and Eco-Visualisations.
+                Prototypes were developed based on each type that could help residents understand their
+                energy usage better and help make changes for their behaviour. A qualitative study found that
+                residents are willing to have energy visualisations, but they all have different reasons for
+                using it. Hence it is important that residents are given a choice on what type of information
+                they want to see in their visualisations.
+            </p>
+
+            <h3>Research questions</h3>
+            <ul>
+                <li>How can future energy consumption data be represented?</li>
+                <li>Are these designs something consumers want in their household?</li>
+                <li>Could these visualisations try to promote behavioural change?</li>
+            </ul>
+
+        </div>
+
+        <div class="section2">
+
+            <div data-scroll class="s2content">
+
+                <h2>Design 1 - Eco-Visualisation</h2>
+
+                <h3>Sketches</h3>
+
+                <p>The thickness of ice will vary depending on how people use their energy. Good decisions in how energy
+                    usage is managed will be reflected in the thickness of ice increasing. This will provide people with
+                    a connectioon in how their decisions with environments far away.</p>
+
+                <img src="/img/Energy vis/pb_sketch.jpg" alt="Polar Bear Sketch">
+
+                <p>Birds eye view of a desert type environment. Similarily to the previous sketch, the environement will either be thriving or going through desertification depending on the decisions people make around their energy usage in their household. These designs could be shown on a mobile screen as a widget or on a dashboard screen.</p>
+
+                <img class="desert" src="/img/Energy vis/desert_sketch.jpg" alt="Desert Sketch">
+            </div>
+
+        </div>
+
+
+        <div data-scroll class="section3">
+
+            <h2>Design choices</h2>
+
+
+        </div>
+
+        <div class="section4">
+
+            <div data-scroll class="s4content">
+
+                <h2>Insights</h2>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script>
+        ScrollOut({
+            threshold: .2,
+            once: true
+        });
+    </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow", "swing");
+        });
+    </script>
+
+</body>
+
+</html>

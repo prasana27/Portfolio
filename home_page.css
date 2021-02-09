@@ -114,6 +114,38 @@ b{
     margin-right: 0px;
 }
 
+.intro img{
+    width: 25px;
+    padding-top: 30px;
+}
+
+
+.linkedin{
+    display: flex;
+}
+
+.linkedin a{
+    margin-left: 10px;
+}
+
+.linkedin p{
+    font-size: 15px !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.linkedin p{
+    transition: all 0.3s ease 0s;
+}
+
+.linkedin p:hover{
+    font-weight: 600;
+}
+
+
+
+
+
 .projects{
     width: 61%;
     
@@ -238,6 +270,10 @@ b{
 
     .intro p{
         margin-top: 0px;
+    }
+
+    .linkedin{
+        display: none;
     }
 }
 
