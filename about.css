@@ -57,6 +57,10 @@ li, a{
     text-decoration: black;
 }
 
+a{
+    text-decoration: none;
+}
+
 .top{
     display: flex;
     justify-content: space-between;

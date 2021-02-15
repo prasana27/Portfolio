@@ -49,6 +49,10 @@ li, a{
     text-decoration: black;
 }
 
+a{
+    text-decoration: none;
+}
+
 .top{
     display: flex;
     justify-content: space-between;
@@ -114,7 +118,7 @@ b{
     margin-right: 0px;
 }
 
-.intro img{
+.linkedin img{
     width: 25px;
     padding-top: 30px;
 }
@@ -155,7 +159,7 @@ b{
     font-size: 10px !important;
 }
 
-.p1, .p2, .p3, .p4{
+.p1, .p2, .p3, .p4, .p5{
     background-color: #80DDFF;
     margin: 0px 10px 0px 20px;
     height: 120px;
@@ -174,7 +178,7 @@ b{
 
 }
 
-.p3{
+.p3{ 
     background-color: #A8E8FF;
 
 }
@@ -182,6 +186,10 @@ b{
 .p4{
     background-color: #B7ECFF;
 
+}
+
+.p5{
+    background-color: #cbf1ff;
 }
 
 
