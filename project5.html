@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project5.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <title>Project 5</title>
+</head>
+
+<body>
+
+    <div class="loader-wrapper">
+        <img class="loader" src="/img/svg-loaders/ball-triangle.svg" alt="loader">
+    </div>
+
+    <header>
+
+        <div class="top">
+
+            <ul class="nav_links">
+                <li><a class="left" href="/index.html">Portfolio</a></li>
+                <li><a class="left" href="/UI.html">UI</a></li>
+                <li><a class="left" href="/illustrations.html">Illustrations</a></li>
+                <li><a class="left" href="/about.html">About me</a></li>
+                <li><a class="left"
+                        href="mailto:prasana.kalanathan@outlook.com?subject=Mail from Prasana portfolio">Contact</a>
+                </li>
+            </ul>
+            <a href="/index.html"><img class="logo" src="/img/Logo.svg" alt="Logo"></a>
+
+        </div>
+
+    </header>
+
+    <div class="cover">
+        <h1>Accessibility Audit</h1>
+        <p>Producing an audit report to identify if site is accessible to all users that want medical advice
+        </p>
+    </div>
+
+    <div>
+        <h2></h2>
+    </div>
+
+    <div class="content">
+
+        <div data-scroll class="section1">
+
+            <h2>Overview</h2>
+
+            <p>The aim of the audit report was to find if the site Evidently Cochrane <a href="https://www.evidentlycochrane.net/">(www.evidentlycochrane.com)</a> conforms to level AA
+                based on WCAG 2.1 guidelines and to provide solutions if they don't.</p>
+
+                <h3>Executive Summary</h3>
+
+                <ul>
+                    <li>The site does not conform to level AA based on the WCAG 2.1 guidelines</li>
+                    <li>There are severe accessibility issues affecting visually impaired users and motor-impaired users</li>
+                    <li>Potential users are losing out on reading reviews of medical research due to poor site design</li>
+                    <li>Site would need to invest in resolving issues, but most problems can be solved through minor tweaks</li>
+                    <li>A user feedback option should be implemented sitewide so that users can report issues</li>
+                    <li>The site should undergo user testing with people with varying levels of disabilities</li>
+                    <li>Site should undergo another audit after tweaks and user testing to check for level AA conformance</li>
+                </ul>
+
+        </div>
+
+        <div class="section2">
+
+            <div data-scroll class="s2content">
+
+                <h2>Technology used for audit</h2>
+
+
+                <ul>
+                    <li>Used the environment of Macbook Pro running macOS Mojave on Google Chrome version 78</li>
+                    <li>Chrome's inbuilt 'Inspect' tool was used to check the HTML and CSS code</li>
+                    <li>Installed a browser extension 'WAVE Evaluation Tool'  to identify WCAG 2.1 issues on the site page</li>
+                    <li>Used Apple's inbuilt screen reader 'VoiceOver' to see how visually-impaired users will use the site</li>
+                    <li>Keyboard focus was used to check if motor-impaired can operate site using just keyboard</li>
+                    <li>Filters such as grayscale were used to check if colour blind users can operate site</li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+        <div data-scroll class="section3">
+
+
+            <h2>Higlight Findings</h2>
+
+            <img src="/img/audit/finding1.png" alt="Finding 1">
+            <img src="/img/audit/finding2.png" alt="Finding 2">
+            <img src="/img/audit/finding3.png" alt="Finding 3">
+
+
+            
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow", "swing");
+        });
+    </script>
+
+    <script>
+        ScrollOut({
+            threshold: .2,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>
