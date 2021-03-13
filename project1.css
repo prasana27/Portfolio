@@ -157,8 +157,9 @@ a.left:hover:before {
 
 .section1{
     padding: 100px 20%;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
+
 
 [data-scroll] {
     transition: opacity 1s ease 0s;

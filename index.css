@@ -110,11 +110,11 @@ b{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 40px;
-    padding: 10px 20%;
+    padding: 20px 20%;
 }
 
 .intro{
-    width: 40%;
+    width: 35%;
     margin-right: 0px;
 }
 
