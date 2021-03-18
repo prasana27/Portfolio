@@ -158,7 +158,7 @@ a.left:hover:before {
 
     .nav_links li{
         text-align: center;
-        padding: 0px 7px;
+        padding: 0px 5px;
     }
 
     .nav_links a{
@@ -166,9 +166,14 @@ a.left:hover:before {
     }
 
     .container img{
-        height: 400px;
-        width: 450px;
+        width: 180px;
+        height: 150px;
     }
+
+    .content {
+        padding: 10px 10%;
+    }
+
 
 }
 
