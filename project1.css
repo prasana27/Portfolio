@@ -140,6 +140,10 @@ a.left:hover:before {
     font-weight: 500;
 }
 
+.content h4{
+    padding-top: 50px;
+}
+
 .content ul{
     list-style-type: "\27A4";
 }
@@ -229,12 +233,12 @@ table td.removecell {
     padding: 100px 20%;
 }
 
-.secction3 h3{
+.section3 h3{
     padding-bottom: 0px;
 }
 
 .section3 p{
-    padding-top: 0px;
+    padding-top: 15px;
 }
 
 .section3 img{
@@ -250,26 +254,42 @@ table td.removecell {
     background-color: #c3eeff;
 }
 
+
+
 .s4content{
     padding: 100px 20%;
 }
 
-.secction4 h3{
-    padding-bottom: 0px;
+.s4content .goal{
+    background-color: #ecfaff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 5px;
+}
+
+.section4 h3{
+    padding-bottom: 15px;
+}
+
+.section4 h4{
+    padding-top: 0px;
+    padding-bottom: 15px;
 }
 
 .section4 p{
-    padding-top: 0px;
+    padding-top: 0px !important;
 }
+
+
 
 .s4content img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 90%;
+    width: 50%;
     border-radius: 3px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .initialimg{
@@ -324,6 +344,11 @@ table td.removecell {
     padding: 100px 20%;
 }
 
+.proto{
+    padding-top: 30px;
+    display: flex;
+}
+
 
 /* Responsive mode */
 
@@ -346,6 +371,17 @@ table td.removecell {
 
     .s4content{
         padding: 100px 10%;
+    }
+
+    .goal p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .goal h4{
+        font-size: 15px;
+        line-height: 25px;
+
     }
 
     .section5{
@@ -398,6 +434,22 @@ table td.removecell {
 
     th, td{
         padding: 3px;
+    }
+
+    .s4content .goal{
+        padding: 20px;
+        margin: 20px 0px;
+    }
+
+    .goal p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .goal h4{
+        font-size: 12px;
+        line-height: 15px;
+
     }
 
 }

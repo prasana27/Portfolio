@@ -32,7 +32,7 @@ body{
     padding: 0px 20%;
 }
 
-h2{
+h2,h3{
     color: white;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -109,6 +109,20 @@ a.left:before {
 a.left:hover:before {
   visibility: visible;
   width: 100%;
+}
+
+.content li{
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    color: white;
+    text-decoration: white;
+    font-weight: 300;
+    line-height: 30px;
+
+}
+
+.content ul{
+    padding-bottom: 30px;
 }
 
 .container{

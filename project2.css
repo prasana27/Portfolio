@@ -127,6 +127,15 @@ a.left:hover:before {
     font-weight: 200;
 }
 
+figcaption{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    padding-bottom: 30px;
+    word-spacing: 1px;
+    line-height: 30px;
+}
 
 .content h2{
     font-size: 50px;
@@ -138,6 +147,10 @@ a.left:hover:before {
     padding-top: 60px;
     padding-bottom: 20px;
     font-weight: 500;
+}
+
+.content h4{
+    padding-top: 60px;
 }
 
 .content ul{
@@ -191,6 +204,23 @@ a.left:hover:before {
 
 .section3 h2{
     padding-bottom: 30px;
+}
+
+.section3 .maps{
+    display: flex;
+
+}
+
+.section3 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.tooltip{
+    width: 20% !important;
 }
 
 .section4{

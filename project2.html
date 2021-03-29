@@ -58,7 +58,7 @@
 
         </div>
 
-        <div  class="section2">
+        <div class="section2">
 
             <div data-scroll class="s2content">
 
@@ -87,15 +87,32 @@
 
             <ul>
                 <li>London was split by its 32 boroughs. Initially, it was planned to be split by its 626 wards, which
-                    generated too many data points,
-                    hence the visualisation became unreadable.</li>
+                    generated too many data points -
+                    this made the visualisation too difficult to interpret.</li>
+                
+                <img src="/img/green_space/Ward.png" alt="London Ward Openspace % Wards">
+                <figcaption>Choropleth map of London Wards - Too many datapoints to form a meaningful insight/pattern</figcaption>
+
                 <li>The geographic layout for London was relaxed, a grid format was chosen. The positions of the
                     boroughs are relatively in the same position in terms of locatiion and neighbouring boroughs.
                     This does remove accuracy for the visualisation, however it opens new possibilities and space to
                     create better and more meaningful insights. </li>
-                <li>Differenet parameters were tested against the percentage green space for example "happiness",
+                <div class="maps">
+                    <img src="/img/green_space/London_standard.png" alt="Standard London borough map">
+                    <img src="/img/green_space/London_relaxed.png" alt="Relaxed London borough map">
+                </div>
+
+                <figcaption>Map of London with accurate borogh boundaries vs relaxed boundaries in grid form</figcaption>
+                <li>Differenet parameters were tested for example "happiness",
                     "pollution related deaths", "household income", "anxiety and depression ", etc...
-                    Some of the parameters showed their was a trend geographictally </li>
+                    Some of the parameters showed their was a trend geographically </li>
+
+                    <div class="maps">
+                        <img  src="/img/green_space/Green.png" alt="Green space london map">
+                        <img  src="/img/green_space/anxiety.png" alt="Anxiety London map">
+                        <img  src="/img/green_space/Pollution.png" alt="Pollution london map">
+                    </div>
+                    <figcaption>Choropleth map of relaxed maps with varioous parameters</figcaption>
                 <li>The parameters that showed a trend were overlapped over each other, to help see more complex
                     insights in how green space can affect the wellbeing of residents living in London</li>
                 <li>The colour lightness of each parameter was used as the scale for how prevalent that parameter was in
@@ -106,11 +123,14 @@
                 <li>Tooltips were added, where the user can hover above the tiles in the map, where they will be
                     displayed the borough name and the exact value for each parameter. This helps the users who want to
                     explore the data further and does not intrude wiith the aesthetics of the design</li>
+
+                <img class="tooltip" src="/img/green_space/Tooltips.png" alt="Tooltip for borough">
+                <figcaption>Tooltips help identify borough name and statistics if enabled</figcaption>
             </ul>
 
         </div>
 
-        <div  class="section4">
+        <div class="section4">
 
             <div data-scroll class="s4content">
 
